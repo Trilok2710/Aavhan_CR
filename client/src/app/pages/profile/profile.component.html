@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Side Nav Bar</title>
+  <link rel="stylesheet" href="profile.component.css">
+</head>
+<body>
+  <div class="profilepage">
+    <div class="sidebar">
+      <div class="profile">
+        <!-- <img *ngIf="user && user.imageUrl" [src]="user.imageUrl" alt="Profile Image">
+        <input type="file" (change)="onFileSelected($event)">
+        <button (click)="uploadProfileImage()">Upload Profile Image</button>
+   -->
+        <!-- <img src="profile-pic.jpg" alt="Profile Picture"> -->
+        <h2>{{ registrationData.firstname }}</h2>
+      </div>
+      <div class="details">
+          <br><br><br>
+        <p>{{ registrationData.college }}</p>
+        <br><br>
+       
+        <p></p>
+        <!-- Add more details here -->
+      </div>
+      
+    </div>
+    <div class="content">
+      <h3>Role Of College Ambassador</h3>
+      <p class="structure">
+        1. Event Publicists: Create a buzz about our fantastic events within your college community.</p>
+        <p>2. Social Media Lead: Engage your peers and ignite their interest in Aavhan using social media platforms.
+        </p>
+3. Using your Referral code - 
+
+Aavhan Half Marathon: Earn a remarkable 25 points every participant that signs up.
+<br><br><p>4. Team Game Registrations: Rack up an epic 100 points every time a team joins the game!
+</p>
+<p>5. Individual Player Registrations: Score a cool 50 points for each solo player who steps onto the field!
+        </p>
+<p class="head2">Points Structure:</p>
+<p>1. Post Propagation (5 Groups) - 10 Points: Share our event posts across five different groups on WhatsApp, spreading the Aavhan excitement far and wide.
+</p>
+<p>2. Instagram Story & WhatsApp Status - 5 Points: Keep the Aavhan vibe alive with regular updates on your Instagram story and WhatsApp status.
+</p>
+<p>3. Aavhan Half Marathon Participants - 50 Points: For every participant you inspire to join the Aavhan Half Marathon, you earn a remarkable 50 points. Your influence sets the pace!
+</p>
+4. Team Game Registrations (Referral Code) - 100 Points: Encourage teams to register for Aavhan using your referral code and you'll score an impressive 100 points for each team that signs up.
+<p>5. Individual Player Registrations (Referral Code) - 50 Points: Similarly, for every individual player who registers with your referral code, you earn a solid 50 points.
+</p>
+      
+    </div>
+    
+  </div>
+  
+  
+</body>
+</html>

@@ -1,0 +1,23 @@
+   <h3>FAQs</h3>
+   <div class="accordion" id="accordionExample">
+    <div class="faqs">
+        <div class="card"  *ngFor="let item of accordionItems; let i = index" [ngClass]="{'open': item.open}">
+            <div class="card-header" [id]="'heading' + i" (click)="toggleCollapse(i)">
+            <h5 class="mb-0">
+              <button class="btn btn-link question" type="button" [attr.data-target]="'#collapse' + i"
+                [attr.aria-expanded]="item.open ? 'true' : 'false'" [attr.aria-controls]="'collapse' + i">
+                {{ item.question }}
+              </button>
+              <i class="fas fa-chevron-down arrow-icon" [ngClass]="{'rotate': item.open}"></i>
+            </h5>
+          </div>
+          <div [id]="'collapse' + i" class="collapse" [ngClass]="{'show': item.open}" [attr.aria-labelledby]="'heading' + i"
+            data-parent="#accordionExample">
+            <div class="card-body">
+              {{ item.answer }}
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  

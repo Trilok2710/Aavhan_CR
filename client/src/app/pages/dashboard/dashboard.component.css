@@ -1,0 +1,76 @@
+/* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> */
+.accordion {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Center vertically on the page */
+    padding: 30px;
+  }
+  h3{
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  /* .faqs{
+    margin-bottom: 30px;
+    background-color: #2d1674;
+  } */
+  .question{
+    color: black;
+    font-weight: 700;
+  }
+  .card {
+    /* margin-bottom: 10px;
+    overflow: hidden; Hide overflow to create the transition effect */
+    width: 85%; /* Set the card width to 70% of the container */
+    margin: 0 auto; /* Center horizontally within the container */
+    color: black;
+    border: 2px solid rgb(27, 31, 48);
+    border-radius: 10px;
+    margin-bottom: 2px;
+    background-color: white;
+  }
+  
+  .card-header {
+    cursor: pointer;
+    transition: background-color 0.3s; /* Add a transition to the background-color */
+    padding: 15px; /* Adjust padding as needed for spacing */
+    /* background-color: white; */
+    color: white;
+
+
+  }
+  
+  .card-body {
+    /* background-color: #f1ff9d; */
+    background-color: white;
+    /* background-color:  #191970; */
+    padding: 10px;
+    max-height: 0; /* Initially set max-height to 0 */
+    opacity: 0; /* Initially set opacity to 0 */
+    overflow: hidden; /* Hide overflow to create the transition effect */
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out; /* Add transitions for max-height and opacity */
+  }
+  
+  .card.open .card-body {
+    max-height: 500px; /* Set a suitable max-height value */
+    opacity: 1; /* Fade in the content */
+    padding: 10px; /* Add padding to the expanded content */
+    transition: max-height 0.5s ease-in, opacity 0.5s ease-in; /* Adjust the transition timing for expansion */
+  }
+    /* Add rotation for the icon when the content is open */
+/* Add rotation for the icon when the content is open */
+.rotate {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Style for the arrow icon */
+  .arrow-icon {
+    position: absolute;
+    top: 50%;
+    right: 15px; /* Adjust the value as needed for proper spacing */
+    font-size: 0.8rem; /* Adjust the font size as needed */
+    color: #000; /* Set the color of the icon */
+  }
+  

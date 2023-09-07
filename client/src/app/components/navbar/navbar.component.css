@@ -1,0 +1,123 @@
+
+.navbar {
+    /* background-color:rgb(32, 31, 31) ; */
+    background-color: #0d005d;
+        /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);  */
+        /* Add a shadow to the navbar */
+    width: 100%;
+    /* position: fixed; */
+  }
+  .aavhanhead{
+    /* height: 30px; */
+    height: 50%;
+    /* width: 110px; */
+    width: 30%;
+  }
+img{
+    height: 70px;
+    width: 70px;
+    /* padding-right: -60px; */
+}
+li{
+    font-size: 1.3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 5px;
+}
+.navbar-brand{
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 2.2rem;
+    color:   rgb(238, 228, 46);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    justify-items: end;
+}
+.join{
+    background-color: #F94C10;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 5px;
+    color: white;
+}
+
+nav{
+    background-color: bisque;
+    height: 55px;
+}
+/* Regular state styling */
+a {
+  color: antiquewhite;
+
+  font-size: 20px; /* Set your desired regular font size */
+  transition: font-size 0.3s; /* Add a smooth transition effect */
+}
+
+/* Hover state styling */
+/* a:hover {
+  font-size: 20px; 
+  color: white;
+} */
+a:hover{
+  color: #F94C10;
+}
+
+.navpro{
+    display: flex;
+    justify-content: flex-end;
+}
+/* Add this media query to target small screen sizes */
+@media (max-width: 767.98px) {
+  #aavhanlogo{
+    height: 60px;
+    width: 60px;
+    margin-top: -10px;
+  }
+  .aavhanhead{
+    height: 30px;
+    width: 100px;
+    margin-top: -20px;
+  }
+    .navpro {
+      flex-direction: column; /* Stack navigation items vertically */
+      align-items: flex-end; /* Align items to the right */
+    }
+  
+    .navpro ul {
+      /* background-color: rgb(32, 31, 31); */
+       /* Change background color for the dropdown */
+      position: absolute;
+      top: 55px; /* Adjust the distance from the top */
+      right: 0; /* Align the dropdown to the right */
+      width: 100%;
+      display: none; /* Hide the dropdown initially */
+    }
+/*   
+    .navpro ul.show {
+      display: block; 
+  
+    } */
+  
+    .navpro ul li {
+      margin: 0; /* Reset margin for stacked items */
+      width: 100%; /* Make each item full width */
+      text-align: center; /* Center-align text */
+    }
+  }
+  .fa-1x {
+    font-size: 1.5rem;
+  }
+  .navbar-toggler.toggler-example {
+    cursor: pointer;
+  }
+  .dark-blue-text {
+    color: #0A38F5;
+  }
+  .dark-pink-text {
+    color: #AC003A;
+  }
+  .dark-amber-text {
+    color: #ff6f00;
+  }
+  .dark-teal-text {
+    color: #004d40;
+  }

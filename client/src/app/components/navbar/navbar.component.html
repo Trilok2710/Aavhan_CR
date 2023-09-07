@@ -1,0 +1,61 @@
+   <nav class="navbar navbar-expand-lg">
+    <a href="" routerLink="/home">
+      <img src="../../../assets/aavhan_logo1.png" alt="Aavhan_Logo" id="aavhanlogo">
+    </a>
+    
+    <a href="" routerLink="/home">
+      <img src="../../../assets/aavhan text-fotor-bg-remover-2023080423538.png" alt="" class="aavhanhead">
+    </a>    
+    
+    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button> -->
+    <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
+    aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><i
+        class="fas fa-bars fa-1x"></i></span></button>
+  
+    <div class="collapse navbar-collapse navpro" id="navbarSupportedContent1">
+      <ul class="navbar-nav ml-auto"> <!-- Add ml-auto class to align items to the right -->
+        <!-- <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li> -->
+        <li class="nav-item active">
+          <a class="nav-link" [routerLink]="'/profile'">Profile</a>
+        </li>
+        
+        <li class="nav-item">
+          <div class="nav-product">
+            <a class="nav-link" [routerLink]="'/register'">
+              <div class="join">Join Us!!</div>
+            </a>
+          </div>
+        </li>
+        
+        <!-- <li class="nav-item" *ngIf="!authService.isLoggedIn"> -->
+          <li class="nav-item">
+          <div class="nav-product" >
+            <a class="nav-link" [routerLink]="'/login'">Login</a>
+            <div id="login" class="col-9" *ngIf="registrationData">
+              
+              <span>
+                <mat-icon routerLink="profile"
+                    style="width:150%;height:150%;margin-top:4%;border-radius: 100px;margin-left: -10px;" >
+                </mat-icon>
+           </span>
+          </div>
+          </div>
+        </li>
+        <!-- <li *ngIf="authService.isLoggedIn"><a (click)="logout()">Logout</a></li> -->
+        
+
+      </ul>
+    </div>
+  </nav>
+  
+  <!-- Make sure you have included Bootstrap's CSS and JS files -->
+  <!-- For example: -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  

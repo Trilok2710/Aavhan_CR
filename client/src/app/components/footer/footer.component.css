@@ -1,0 +1,145 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(98, 97, 97);
+
+}
+.line {
+    border: none;
+    height: 3px;
+    background-color: #e5a6f4;
+  }
+  section{
+    /* background-color: rgb(32, 31, 31); */
+    background-color: #2d1674;
+  }
+  .head{
+    color: #f1ff9d;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: -60px;
+    
+  }
+  p{
+    text-align: center;
+  }
+ 
+  
+li{
+    list-style: none;
+    display: inline;
+    align-items: center;
+    margin: 10px;
+}
+.copyright{
+    background-color: rgb(98, 97, 97);
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+}
+.sponsers{
+    /* background-color: rgb(32, 31, 31); */
+    background-color: #2d1674;
+    height: 50px;
+    
+}
+h3{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.linkdin1{
+    position: relative;
+    width: 10%;
+    background-color: none;
+}
+.imgtwitter{
+    top: 121px;
+  left: 1195px;
+  max-width: 50px;
+  filter: grayscale(100%); 
+}
+.imglinkdin{
+    top: 150px;
+  left: 1250px;
+  max-width: 35px;
+}
+img{
+    position: absolute;
+  /* Optional: Set the maximum width of the image */
+  border-radius: 50%; /* Optional: Apply border-radius for a rounded image */
+  height: 90px;
+  width: 90px;
+  /* margin: 20px; */
+  margin-top: 10px;
+  border: 2px solid gray;
+}
+a{
+  /* display: flex;
+  justify-content: center; */
+  padding-left:30px ;
+  padding-right: 30px;
+}
+
+.linkss{
+  position: relative;
+  /* top: 150px; */
+  display: flex;
+  justify-content:center ;
+  align-content: flex-end;
+  /* left: 10px; */
+}
+.first{
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 20%;
+
+}
+.picture{
+  border-radius: 50%;
+
+}
+h5{
+  color: black;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  
+}
+.contact{
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}.card{
+  margin: 20px;
+  /* background-color:#e5a6f4; */
+  background-color:#f1ff9d;
+  /* height: 250px; */
+  width: 50px;
+}
+.photos{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.card-text{
+  margin-top: -10px;
+  font-weight: 400;
+}
+.position{
+  margin-top: 0px;
+}
+@media (max-width: 767.98px){
+  a{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+ 
+  
+}

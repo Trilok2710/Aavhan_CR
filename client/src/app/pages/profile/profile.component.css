@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .sidebar {
+    width: 20%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    height: 600px;
+  }
+  
+  .profile {
+    text-align: center;
+  }
+  
+  .profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  .head2{
+    font-weight: 800;
+  }
+  
+  .profile h2 {
+    margin: 0;
+  }
+  
+  .details p {
+    margin: 5px 0;
+    text-align: center;
+  }
+  .process{
+    color: black;
+    display: flex;
+    justify-content: center;
+
+  }
+  /* .content {
+    width: calc(100% - 250px); /* Adjust the width based on your sidebar's width */
+   
+  .structure{
+    color: black;
+  }
+  .profilepage {
+    display: flex;
+  }
+  
+  .sidebar {
+    flex: 1; /* Sidebar takes up 1/2 of available space */
+    padding: 20px; /* Add padding for spacing */
+    width: 15%;
+
+  }
+  
+  .content {
+    flex: 4; /* Content takes up 1/2 of available space */
+    padding-left: 20px; 
+    background-color: blanchedalmond;
+    width: 85%;
+    
+
+    justify-items: centers;
+  }
+  h3{
+    text-align: center;
+  }
+  

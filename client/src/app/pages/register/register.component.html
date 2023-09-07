@@ -1,0 +1,50 @@
+<div class="regform">
+    <h1>REGISTRATION FORM</h1>
+
+  <div class="form">
+    <form action="">
+      <div class="form-group">
+        <label for="firstname">Name:</label>
+        <input type="text" name="firstname" id="firstname" placeholder="Name" required [(ngModel)]="firstname" [ngModelOptions]="{standalone:true}">
+      </div>
+      <!-- <div class="form-group">
+        <label for="lastname">lastName:</label>
+        <input type="text" name="lastname" id="lastname" placeholder="lastname" required [(ngModel)]="lastname" [ngModelOptions]="{standalone:true}">
+      </div> -->
+
+      <div class="form-group">
+        <label for="phone">Phone:</label>
+        <input type="number" name="phone" id="phone" placeholder="Phone Number" [minLength]="10" maxlength="10" required [(ngModel)]="phone" [ngModelOptions]="{standalone:true}" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Email" required class="form-control" [(ngModel)]="email" [ngModelOptions]="{standalone:true}" >
+      </div>
+      
+
+      <div class="form-group">
+        <label for="college">College:</label>
+        <input type="text" name="college" id="college" placeholder="College/Institution" required class="form-control" [(ngModel)]="college" [ngModelOptions]="{standalone:true}">
+      </div>
+
+      <div class="form-group">
+        <label for="yos">Year Of Study:</label>
+        <input type="number" name="yos" id="yos" placeholder="Year of Study" required class="form-control" [(ngModel)]="yos" [ngModelOptions]="{standalone:true}">
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" placeholder="Password" required class="form-control" [(ngModel)]="password" [ngModelOptions]="{standalone:true}" minlength="8">
+        <span class="toggle-password" (click)="togglePasswordVisibility()">
+          <i class="fa" [ngClass]="{'fa-eye': showPassword, 'fa-eye-slash': !showPassword}"></i>
+        </span>
+      </div>
+      <div class="buttonsub">
+        <button class="btn" id="submit" (click)="save()"  >Submit</button>
+
+      </div>
+
+    </form>
+  </div>
+  <br><br>
+</div>
